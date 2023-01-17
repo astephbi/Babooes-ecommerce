@@ -44,7 +44,7 @@ const Item = ({ item, width }) => {
           alt={item.name}
           width="300px"
           height="400px"
-          src={`http://localhost:2000${url}`}
+          src={`http://localhost:1337${url}`}
           onClick={() => navigate(`/item/${item.id}`)}
           style={{ cursor: 'pointer' }}
         />
@@ -91,7 +91,7 @@ const Item = ({ item, width }) => {
       </Box>
 
       <Box mt="3px">
-        <Typography variant="subtitle2" color={neutral.dark}>
+        <Typography variant="subtitle2" color={shades.primary[300]}>
           {category
             .replace(/([A-Z])/g, ' $1')
             .replace(/^./, (str) => str.toUpperCase())}
