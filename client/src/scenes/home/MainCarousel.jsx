@@ -88,7 +88,9 @@ const MainCarousel = () => {
             <Typography color={shades.secondary[200]}>
               -- NEW ITEMS
             </Typography>
-            <Typography variant="h1">Best Socks To buy</Typography>
+            <Typography variant="h1" fontSize={45}>
+              Keeping Africa's little feet warm and stylish
+            </Typography>
             <Typography
               fontWeight="bold"
               color={shades.secondary[300]}

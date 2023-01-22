@@ -2,7 +2,6 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Badge, Box, IconButton } from '@mui/material';
 import {
-  PersonOutline,
   ShoppingBagOutlined,
   MenuOutlined,
   SearchOutlined,
@@ -10,7 +9,7 @@ import {
 import { useNavigate } from 'react-router-dom';
 import { shades } from '../../theme';
 import { setIsCartOpen } from '../../state';
-import logo from '../logo/logo.svg';
+import logo from '../logo/logo.png';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -53,9 +52,7 @@ const Navbar = () => {
           <IconButton sx={{ color: 'black' }}>
             <SearchOutlined />
           </IconButton>
-          <IconButton sx={{ color: 'black' }}>
-            <PersonOutline />
-          </IconButton>
+
           <Badge
             badgeContent={cart.length}
             color="secondary"

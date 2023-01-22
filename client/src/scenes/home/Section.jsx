@@ -2,7 +2,7 @@ import { useTheme } from '@emotion/react';
 import { Box } from '@mui/material';
 import logo from '../logo/logo.png';
 
-function Footer() {
+function Section() {
   const {
     palette: { neutral },
   } = useTheme();
@@ -18,4 +18,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Section;
